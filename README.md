@@ -1,30 +1,41 @@
 # StreamAI
 
-Première fondation d'un studio vocal local destiné aux streamers.
+MVP gratuit et open source d'un studio vocal local pour streamers et createurs.
 
-## Fonctionnalités actuelles
+## Fonctions actuelles
 
-- Interface responsive en français
-- Autorisation et capture du microphone
-- Vumètre audio en temps réel
-- Sélection de profils vocaux préparatoire
-- Arrêt propre du flux audio
+- Capture du microphone dans le navigateur
+- Vumetre en temps reel
+- Quatre profils audio gratuits
+- Egalisation et compression traitees localement
+- Ecoute de l'effet avec un casque
+- Aucun compte, abonnement ou paiement
 
-> Les profils ne transforment pas encore la voix. Le prochain jalon est le moteur de traitement audio local.
+> La version actuelle applique des effets audio classiques. Elle ne reproduit pas la voix d'une personne et n'utilise pas encore de modele de conversion vocale par IA.
 
-## Lancement
+## Demarrer en local
 
 ```bash
 npm install
 npm run dev
 ```
 
-Ouvrez ensuite l'adresse indiquée par Vite et autorisez l'accès au microphone.
+Ouvrez l'adresse affichee par Vite, autorisez le microphone et utilisez un casque avant d'activer l'ecoute.
 
-## Prochaine étape
+## Publier gratuitement
 
-Brancher un AudioWorklet pour traiter le signal sans bloquer l'interface, puis intégrer un modèle vocal autorisé avec une licence commerciale claire.
+Le projet est compatible avec Vercel, Netlify et GitHub Pages. Le microphone exige une page HTTPS en production.
 
-## Sécurité
+## Prochaines etapes
 
-Le projet doit utiliser uniquement des voix originales, personnelles ou fournies avec un consentement vérifiable. Les imitations non autorisées et l'usurpation d'identité ne font pas partie du produit.
+1. Ajouter un AudioWorklet pour reduire la latence
+2. Ajouter l'enregistrement avant/apres
+3. Creer une application de bureau et une sortie audio virtuelle pour OBS et Discord
+4. Integrer des modeles vocaux originaux avec consentement explicite
+
+## Regles du projet
+
+- Fonctions principales gratuites pour tous
+- Traitement local lorsque cela est techniquement possible
+- Aucune imitation de voix sans autorisation
+- Transparence sur les effets et contenus generes
