@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root { color-scheme: dark; font-family: 'DM Sans', sans-serif; background: #080a0f; color: #f6f7f9; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: radial-gradient(circle at 78% 10%, rgba(104, 76, 255, .18), transparent 28%), #080a0f; }
+button { font: inherit; }
+main { width: min(1160px, calc(100% - 40px)); margin: 0 auto; padding-bottom: 70px; }
+nav { height: 84px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #20232d; }
+.brand { font-family: 'Space Grotesk'; font-size: 21px; font-weight: 700; display: flex; gap: 10px; align-items: center; }
+.brand-mark { display: grid; place-items: center; width: 34px; height: 34px; background: #6c4cff; border-radius: 10px; box-shadow: 0 0 28px rgba(108,76,255,.4); }
+.badge { display: flex; align-items: center; gap: 7px; color: #9fa7ba; font-size: 13px; border: 1px solid #292d38; border-radius: 99px; padding: 8px 12px; }
+.hero { padding: 72px 0 48px; max-width: 800px; }
+.eyebrow, .panel-title p { color: #8c75ff; font-size: 12px; letter-spacing: .14em; font-weight: 700; margin: 0 0 11px; }
+h1 { font-family: 'Space Grotesk'; font-size: clamp(48px, 8vw, 86px); line-height: .98; letter-spacing: -.055em; margin: 0; }
+h1 span { color: #7659ff; }
+.intro { color: #9ca3b4; font-size: 18px; line-height: 1.65; max-width: 650px; margin: 28px 0 0; }
+.studio { display: grid; grid-template-columns: 1.35fr 1fr; gap: 18px; }
+.panel { background: rgba(18, 21, 29, .86); border: 1px solid #282c37; border-radius: 20px; padding: 26px; box-shadow: 0 20px 70px rgba(0,0,0,.22); }
+.main-panel { min-height: 385px; display: flex; flex-direction: column; }
+.panel-title { display: flex; justify-content: space-between; align-items: flex-start; }
+.panel-title h2 { margin: 0; font-family: 'Space Grotesk'; font-size: 23px; }
+.status { color: #777f90; background: #20232b; border-radius: 99px; padding: 7px 10px; font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+.status.live { color: #4ef0b5; background: rgba(78,240,181,.1); }
+.meter { height: 74px; margin-top: 66px; padding: 5px; border-radius: 12px; background: repeating-linear-gradient(90deg, #282d38 0 6px, transparent 6px 10px); overflow: hidden; position: relative; }
+.meter-fill { height: 100%; background: linear-gradient(90deg, #684cff, #37e8be); border-radius: 8px; transition: width .08s linear; box-shadow: 0 0 25px rgba(70,220,190,.4); }
+.meter-labels { display: flex; justify-content: space-between; font-size: 10px; color: #646b7b; margin-top: 8px; }
+.primary { margin-top: auto; min-height: 54px; border: 0; border-radius: 12px; color: white; background: #6c4cff; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer; box-shadow: 0 10px 35px rgba(108,76,255,.26); }
+.primary:hover { background: #7a60ff; }
+.primary.stop { background: #292d37; box-shadow: none; }
+.error { color: #ff8c9b; font-size: 13px; margin-bottom: 0; }
+.preset-list { display: grid; gap: 10px; margin-top: 27px; }
+.preset { width: 100%; color: #f6f7f9; border: 1px solid #292d37; background: #151820; border-radius: 13px; padding: 13px; display: grid; grid-template-columns: 38px 1fr auto; align-items: center; gap: 12px; text-align: left; cursor: pointer; }
+.preset:hover, .preset.selected { border-color: #6c4cff; background: rgba(108,76,255,.09); }
+.preset-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 9px; background: #262a34; color: #9b89ff; font-weight: 700; }
+.preset strong, .preset small { display: block; }
+.preset small { margin-top: 4px; color: #777f90; }
+.pitch { color: #8370eb; font-size: 13px; }
+.notice { color: #777f90; font-size: 12px; line-height: 1.55; margin: 19px 0 0; }
+.steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px; }
+.steps article { border-top: 1px solid #2b2f3a; padding: 24px 4px; }
+.steps span { color: #6c4cff; font-family: 'Space Grotesk'; font-size: 13px; }
+.steps h3 { font-family: 'Space Grotesk'; margin: 14px 0 8px; }
+.steps p { color: #7f8798; line-height: 1.5; margin: 0; font-size: 14px; }
+@media (max-width: 780px) { main { width: min(100% - 24px, 620px); } .hero { padding-top: 48px; } .studio, .steps { grid-template-columns: 1fr; } .badge { display: none; } .meter { margin-top: 45px; } }
